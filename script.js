@@ -11,7 +11,7 @@ function comparison(sum,luckyNumber){
     else if(luckyNumber<0){
         outputBox.innerText = "Please Enter positive value";
     }
-    if(sum%luckyNumber===0){
+    else if(sum%luckyNumber===0){
         outputBox.innerText=("booomm!! your date of birth is lucky");
     }
     else{
