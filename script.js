@@ -5,6 +5,12 @@ var outputBox=document.querySelector("#output-box");
 
 
 function comparison(sum,luckyNumber){
+    if(luckyNumber===""){
+        outputBox.innerText = "Please Enter lucky number";
+    }
+    else if(luckyNumber<0){
+        outputBox.innerText = "Please Enter positive value";
+    }
     if(sum%luckyNumber===0){
         outputBox.innerText=("booomm!! your date of birth is lucky");
     }
