@@ -27,7 +27,7 @@ function helper(dob){
 function isItLucky(){
     var dob=dateOfBirth.value;
     var sum=helper(dob);
-    if(dob>0 && sum>0){
+    if(dob && sum){
         comparison(sum,luckyNumber.value);
     }
     else{
