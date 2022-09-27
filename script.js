@@ -27,7 +27,12 @@ function helper(dob){
 function isItLucky(){
     var dob=dateOfBirth.value;
     var sum=helper(dob);
-    comparison(sum,luckyNumber.value);
+    if(dob>0 && sum>0){
+        comparison(sum,luckyNumber.value);
+    }
+    else{
+        outputBox.innerText = "Please Enter both the fields";
+    }
 }
 
 button.addEventListener("click",isItLucky);
