@@ -8,7 +8,7 @@ function comparison(sum,luckyNumber){
     if(luckyNumber===""){
         outputBox.innerText = "Please Enter lucky number";
     }
-    else if(luckyNumber<0){
+    else if(luckyNumber<1){
         outputBox.innerText = "Please Enter positive value";
     }
     else if(sum%luckyNumber===0){
